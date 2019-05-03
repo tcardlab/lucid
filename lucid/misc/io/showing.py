@@ -227,8 +227,6 @@ def obj(mesh, background='0xffffff'):
     
 
 def textured_mesh(mesh, texture, background='0xffffff'):
-  texture_data_url = _image_url(texture, fmt='jpeg', quality=90)
-
   code = Template('''
   <input id="unfoldBox" type="checkbox" class="control">Unfold</input>
   <input id="shadeBox" type="checkbox" class="control">Shade</input>
