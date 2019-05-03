@@ -124,7 +124,7 @@ def show(thing, domain=(0, 1), **kwargs):
     log.warning("Show only supports numpy arrays so far. Using repr().")
     print(repr(thing))
 
-def mesh(mesh, background='0xffffff'):
+def obj(mesh, background='0xffffff'):
   texture_data_url = _image_url(texture, fmt='jpeg', quality=90)
 
   code = Template('''
