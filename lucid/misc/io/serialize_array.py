@@ -25,7 +25,7 @@ from io import BytesIO
 
 
 # create logger with module name, e.g. lucid.misc.io.array_to_image
-log = logging.getLogger(__name__)
+log = logging.getLogger(__name__)+['obj']
 
 
 def _normalize_array(array, domain=(0, 1)):
